@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>知识图谱系统</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="知识图谱系统">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Demo</a></li>
+                <li><a href="#">Download</a></li>
+                <li><a href="#">Document</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="intro">
+            <div class="intro-left">
+                <h1>Deep Learning based Knowledge Extraction Toolkit</h1>
+                <button class="start-btn">开始</button>
+            </div>
+            <div class="intro-right">
+                <div class="abstract-graph">
+                    <!-- 这里放置知识图谱的抽象图 -->
+                </div>
+            </div>
+        </section>
+        <section class="features">
+            <!-- 这里放置知识图谱系统的特性介绍 -->
+        </section>
+        <section class="demo">
+            <!-- 这里放置知识图谱系统的演示视频或截图 -->
+        </section>
+        <section class="download">
+            <!-- 这里放置知识图谱系统的下载链接和说明 -->
+        </section>
+        <section class="document">
+            <!-- 这里放置知识图谱系统的文档和说明 -->
+        </section>
+    </main>
+    <script src="script.js"></script>
+    <style>
+        /* 全局样式 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        /* 头部样式 */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 60px;
+            background-color: rgba(255, 255, 255, 0.9);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            z-index: 999;
+        }
+
+        .logo {
+            float: left;
+            margin-left: 20px;
+        }
+
+        nav {
+            float: right;
+            margin-right: 20px;
+        }
+
+        nav ul {
+            list-style: none;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin-left: 20px;
+        }
+
+        nav ul li:first-child {
+            margin-left: 0;
+        }
+
+        nav ul li a {
+            display: block;
+            padding: 20px;
+            color: #333;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: rgb(14, 66, 210);
+        }
+
+        /* 主页介绍部分样式 */
+        .intro {
+            height: 100vh;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            background-color: #f5f5f5;
+        }
+
+        .intro-left {
+            flex: 1;
+            padding: 40px;
+        }
+
+        .intro-left h1 {
+            font-size: 48px;
+            font-weight: bold;
+            color: rgb(14, 66, 210);
+            margin-bottom: 40px;
+        }
+
+        .start-btn {
+            padding: 20px 40px;
+            font-size: 24px;
+            font-weight: bold;
+            color: #fff;
+            background-color: rgb(14, 66, 210);
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .start-btn:hover {
+            background-color: #fff;
+            color: rgb(14, 66, 210);
+        }
+
+        .intro-right {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .abstract-graph {
+            width: 400px;
+            height: 400px;
+            background-color: #fff;
+            /* 这里可以添加抽象图的样式 */
+        }
+
+        /* 页面滚动到第二页时，头部导航栏固定在顶部 */
+        .fixed-header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 60px;
+            background-color: rgba(255, 255, 255, 0.9);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            z-index: 999;
+        }
+
+        /* 第二页背景色 */
+        .features {
+            height: 100vh;
+            background-color: #f8f8f8;
+        }
+
+        /* 其他部分样式 */
+        .demo {
+            height: 100vh;
+            background-color: #fff;
+        }
+
+        .download {
+            height: 100vh;
+            background-color: #f8f8f8;
+        }
+
+        .document {
+            height: 100vh;
+            background-color: #fff;
+        }
+    </style>
+</body>
+
+</html>

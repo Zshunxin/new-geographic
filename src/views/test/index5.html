@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>知识图谱系统首页</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Demo</a></li>
+                <li><a href="#">Download</a></li>
+                <li><a href="#">Document</a></li>
+            </ul>
+        </nav>
+        <div class="slogan">
+            <h1>Deep Learning based Knowledge Extraction Toolkit</h1>
+            <img src="abstract-graph.png" alt="abstract graph">
+            <button>开始</button>
+        </div>
+    </header>
+    <main>
+        <section class="intro">
+            <h2>关于知识图谱系统</h2>
+            <p>知识图谱做的是重庆市的实体信息，每个实体有["关系", "状态", "空间", "变化", "时间", "属性"]这些属性。</p>
+        </section>
+        <section class="features">
+            <h2>系统特点</h2>
+            <ul>
+                <li>基于深度学习技术</li>
+                <li>支持多种实体属性</li>
+                <li>可视化展示实体关系</li>
+                <li>易于使用和扩展</li>
+            </ul>
+        </section>
+    </main>
+    <script src="script.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 80px;
+            background-color: rgb(14, 66, 210);
+            z-index: 999;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 50px;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+        }
+
+        nav li {
+            margin-right: 20px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        nav a:hover {
+            background-color: rgb(14, 66, 210);
+        }
+
+        .slogan {
+            display: flex;
+            align-items: center;
+        }
+
+        .slogan h1 {
+            font-size: 36px;
+            color: #fff;
+            margin-right: 50px;
+        }
+
+        .slogan img {
+            width: 200px;
+            height: 200px;
+            margin-right: 50px;
+        }
+
+        .slogan button {
+            padding: 10px 20px;
+            font-size: 18px;
+            background-color: rgb(14, 66, 210);
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        .slogan button:hover {
+            background-color: #fff;
+            color: rgb(14, 66, 210);
+        }
+
+        main {
+            margin-top: 80px;
+        }
+
+        .intro {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: #f5f5f5;
+        }
+
+        .intro h2 {
+            font-size: 36px;
+            margin-bottom: 30px;
+        }
+
+        .intro p {
+            font-size: 24px;
+            margin-bottom: 50px;
+            text-align: center;
+        }
+
+        .features {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: #fff;
+        }
+
+        .features h2 {
+            font-size: 36px;
+            margin-bottom: 30px;
+        }
+
+        .features ul {
+            list-style: none;
+            font-size: 24px;
+            text-align: center;
+        }
+
+        .features li {
+            margin-bottom: 20px;
+        }
+
+        .sticky {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 80px;
+            background-color: rgb(14, 66, 210);
+            z-index: 999;
+            padding: 0 50px;
+        }
+    </style>
+    <script>
+        // 点击开始按钮跳转到Demo页面
+        var startBtn = document.querySelector('.slogan button');
+        startBtn.addEventListener('click', function () {
+            window.location.href = 'demo.html';
+        });
+
+        // 导航栏始终置顶
+        window.addEventListener('scroll', function () {
+            var header = document.querySelector('header');
+            if (window.pageYOffset > 0) {
+                header.classList.add('sticky');
+            } else {
+                header.classList.remove('sticky');
+            }
+        });
+
+    </script>
+</body>
+
+</html>

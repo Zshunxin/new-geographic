@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Knowledge Graph System</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <header>
+        <img src="logo.png" alt="Logo">
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#demo">Demo</a></li>
+                <li><a href="#download">Download</a></li>
+                <li><a href="#document">Document</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home">
+            <div class="home-content">
+                <h1>Deep Learning based Knowledge Extraction Toolkit</h1>
+                <img src="abstract-graph.png" alt="Abstract Graph">
+            </div>
+        </section>
+        <!-- Add other sections here -->
+    </main>
+    <style>
+        body {
+            background-color: white;
+            color: rgb(14, 66, 210);
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            border-bottom: 1px solid rgb(14, 66, 210);
+        }
+
+        header img {
+            opacity: 0;
+            animation: fadeIn 2s ease-in-out forwards;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: rgb(14, 66, 210);
+            text-decoration: none;
+            transition: color 0.5s ease;
+        }
+
+        nav ul li a:hover {
+            color: rgb(100, 100, 210);
+        }
+
+        main {
+            padding: 50px;
+        }
+
+        .home-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            align-items: center;
+            gap: 50px;
+        }
+
+        .home-content h1 {
+            font-size: 2em;
+        }
+
+        .home-content img {
+            width: 100%;
+            height: auto;
+            opacity: 0;
+            animation: fadeIn 2s ease-in-out forwards;
+        }
+    </style>
+</body>
+
+</html>

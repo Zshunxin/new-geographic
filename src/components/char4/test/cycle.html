@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <img src="avatar.png" alt="Avatar" class="avatar">
+        <button id="btn1">Button 1</button>
+        <button id="btn2">Button 2</button>
+        <button id="btn3">Button 3</button>
+        <button id="btn4">Button 4</button>
+        <button id="btn5">Button 5</button>
+        <button id="btn6">Button 6</button>
+    </div>
+    <style>
+        .container {
+            position: relative;
+            margin: 50px;
+            width: 200px;
+            height: 200px;
+        }
+
+        .avatar {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        button {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: #ccc;
+        }
+
+        #btn1 {
+            top: 0;
+            left: 50%;
+            transform: translateX(-25%) translateY(-100%);
+        }
+
+        #btn2 {
+            top: 25%;
+            right: 0;
+            transform: translateX(50%) translateY(-25%);
+        }
+
+        #btn3 {
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-25%) translateY(50%);
+        }
+
+        #btn4 {
+            bottom: 25%;
+            left: 0;
+            transform: translateX(-100%) translateY(-25%);
+        }
+
+        #btn5 {
+            bottom: 25%;
+            right: 0;
+            transform: translateX(100%) translateY(-25%);
+        }
+
+        #btn6 {
+            top: 25%;
+            left: 0;
+            transform: translateX(-100%) translateY(-25%);
+        }
+    </style>
+    <script>
+        var container = document.querySelector('.container');
+        var buttons = document.querySelectorAll('button');
+
+        for (var i = 0; i < buttons.length; i++) {
+            buttons[i].addEventListener('click', function () {
+                container.style.transform = 'rotate(' + (i * 60) + 'deg)';
+            });
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,712 @@
+[
+    {
+        "name": "重庆大学A区",
+        "level": "district",
+        "adcode": 0,
+        "lng": 106.468812,
+        "lat": 29.564912,
+        "childrenNum": 0,
+        "parent": 330000,
+        "value": 652.7391613542643
+    },
+    {
+        "name": "重庆师范大学沙坪坝校区",
+        "level": "district",
+        "adcode": 1,
+        "lng": 106.455708,
+        "lat": 29.556978,
+        "childrenNum": 0,
+        "parent": 330000,
+        "value": 81.70526105925613
+    },
+    {
+        "name": "重庆科技学院虎溪校区",
+        "level": "district",
+        "adcode": 2,
+        "lng": 106.325665,
+        "lat": 29.591781,
+        "childrenNum": 0,
+        "parent": 330000,
+        "value": 362.5394212807975
+    },
+    {
+        "name": "重庆师范大学大学城校区",
+        "level": "district",
+        "adcode": 3,
+        "lng": 106.29989,
+        "lat": 29.612734,
+        "childrenNum": 0,
+        "parent": 330000,
+        "value": 257.352058653606
+    },
+    {
+        "name": "重庆大学B区",
+        "level": "district",
+        "adcode": 4,
+        "lng": 106.459512,
+        "lat": 29.567318,
+        "childrenNum": 0,
+        "parent": 330000,
+        "value": 1763.8506133323872
+    },
+    {
+        "name": "重庆医科大学缙云校区",
+        "level": "district",
+        "adcode": 5,
+        "lng": 106.303879,
+        "lat": 29.62448,
+        "childrenNum": 0,
+        "parent": 330000,
+        "value": 1614.2875090457333
+    },
+    {
+        "name": "四川外国语大学",
+        "level": "district",
+        "adcode": 6,
+        "lng": 106.43658,
+        "lat": 29.570161,
+        "childrenNum": 0,
+        "parent": 330000,
+        "value": 4088.727742766285
+    },
+    {
+        "name": "重庆大学虎溪校区",
+        "level": "district",
+        "adcode": 7,
+        "lng": 106.29859,
+        "lat": 29.5933,
+        "childrenNum": 0,
+        "parent": 330000,
+        "value": 1326.955407875159
+    },
+    {
+        "name": "四川美术学院虎溪校区",
+        "level": "district",
+        "adcode": 8,
+        "lng": 106.297347,
+        "lat": 29.602724,
+        "childrenNum": 0,
+        "parent": 330000,
+        "value": 3810.1877684290675
+    },
+    {
+        "name": "重庆大学A区",
+        "level": "district",
+        "adcode": 9,
+        "lng": 106.468812,
+        "lat": 29.564912,
+        "childrenNum": 0,
+        "parent": 330000,
+        "value": 1823.744097529344
+    },
+    {
+        "name": "重庆师范大学沙坪坝校区",
+        "level": "district",
+        "adcode": 10,
+        "lng": 106.455708,
+        "lat": 29.556978,
+        "childrenNum": 0,
+        "parent": 330000,
+        "value": 2285.819005884728
+    },
+    {
+        "name": "重庆科技学院虎溪校区",
+        "level": "district",
+        "adcode": 11,
+        "lng": 106.325665,
+        "lat": 29.591781,
+        "childrenNum": 0,
+        "parent": 330000,
+        "value": 4780.986822750605
+    },
+    {
+        "name": "重庆师范大学大学城校区",
+        "level": "district",
+        "adcode": 12,
+        "lng": 106.29989,
+        "lat": 29.612734,
+        "childrenNum": 0,
+        "parent": 330000,
+        "value": 122.03903867095245
+    },
+    {
+        "name": "重庆大学B区",
+        "level": "district",
+        "adcode": 13,
+        "lng": 106.459512,
+        "lat": 29.567318,
+        "childrenNum": 0,
+        "parent": 330000,
+        "value": 3931.682248912115
+    },
+    {
+        "name": "重庆医科大学缙云校区",
+        "level": "district",
+        "adcode": 14,
+        "lng": 106.303879,
+        "lat": 29.62448,
+        "childrenNum": 0,
+        "parent": 330000,
+        "value": 1309.5620565409372
+    },
+    {
+        "name": "四川外国语大学",
+        "level": "district",
+        "adcode": 15,
+        "lng": 106.43658,
+        "lat": 29.570161,
+        "childrenNum": 0,
+        "parent": 330000,
+        "value": 2185.867963518986
+    },
+    {
+        "name": "重庆大学虎溪校区",
+        "level": "district",
+        "adcode": 16,
+        "lng": 106.29859,
+        "lat": 29.5933,
+        "childrenNum": 0,
+        "parent": 330000,
+        "value": 3046.6411800701044
+    },
+    {
+        "name": "四川美术学院虎溪校区",
+        "level": "district",
+        "adcode": 17,
+        "lng": 106.297347,
+        "lat": 29.602724,
+        "childrenNum": 0,
+        "parent": 330000,
+        "value": 2286.955418545472
+    },
+    {
+        "name": "重庆电子工程职业学院",
+        "level": "district",
+        "adcode": 18,
+        "lng": 106.324636,
+        "lat": 29.62065,
+        "childrenNum": 0,
+        "parent": 330000,
+        "value": 2773.358456524724
+    },
+    {
+        "name": "西南政法大学沙坪坝校区",
+        "level": "district",
+        "adcode": 19,
+        "lng": 106.442386,
+        "lat": 29.568106,
+        "childrenNum": 0,
+        "parent": 330000,
+        "value": 45.32037938682176
+    },
+    {
+        "name": "重庆大学C区",
+        "level": "district",
+        "adcode": 20,
+        "lng": 106.453641,
+        "lat": 29.560138,
+        "childrenNum": 0,
+        "parent": 330000,
+        "value": 3797.315540146843
+    },
+    {
+        "name": "重庆大学自动化学院",
+        "level": "district",
+        "adcode": 21,
+        "lng": 106.468811,
+        "lat": 29.567789,
+        "childrenNum": 0,
+        "parent": 330000,
+        "value": 2742.433129677403
+    },
+    {
+        "name": "重庆医药高等专科学校",
+        "level": "district",
+        "adcode": 22,
+        "lng": 106.313178,
+        "lat": 29.626652,
+        "childrenNum": 0,
+        "parent": 330000,
+        "value": 3648.0623221946753
+    },
+    {
+        "name": "长征驾校",
+        "level": "district",
+        "adcode": 23,
+        "lng": 106.445236,
+        "lat": 29.570162,
+        "childrenNum": 0,
+        "parent": 330000,
+        "value": 3442.0755658867465
+    },
+    {
+        "name": "重庆大学生物工程学院",
+        "level": "district",
+        "adcode": 24,
+        "lng": 106.471561,
+        "lat": 29.56514,
+        "childrenNum": 0,
+        "parent": 330000,
+        "value": 2265.2551369467933
+    },
+    {
+        "name": "重庆大学贸易与行政学院",
+        "level": "district",
+        "adcode": 25,
+        "lng": 106.470763,
+        "lat": 29.564366,
+        "childrenNum": 0,
+        "parent": 330000,
+        "value": 4944.132712871666
+    },
+    {
+        "name": "金夫人摄影学院",
+        "level": "district",
+        "adcode": 26,
+        "lng": 106.301628,
+        "lat": 29.577079,
+        "childrenNum": 0,
+        "parent": 330000,
+        "value": 3277.312612815192
+    },
+    {
+        "name": "重庆大学电气工程学院",
+        "level": "district",
+        "adcode": 27,
+        "lng": 106.466144,
+        "lat": 29.564684,
+        "childrenNum": 0,
+        "parent": 330000,
+        "value": 1946.2676190043383
+    },
+    {
+        "name": "重庆能源工业技师学院",
+        "level": "district",
+        "adcode": 28,
+        "lng": 106.443197,
+        "lat": 29.516185,
+        "childrenNum": 0,
+        "parent": 330000,
+        "value": 3922.1984444436252
+    },
+    {
+        "name": "重庆大学C区应用技术学院",
+        "level": "district",
+        "adcode": 29,
+        "lng": 106.453813,
+        "lat": 29.559812,
+        "childrenNum": 0,
+        "parent": 330000,
+        "value": 1218.157161873733
+    },
+    {
+        "name": "四川美术学院行政中心",
+        "level": "district",
+        "adcode": 30,
+        "lng": 106.297463,
+        "lat": 29.602118,
+        "childrenNum": 0,
+        "parent": 330000,
+        "value": 4312.4509841797535
+    },
+    {
+        "name": "中天IT学院",
+        "level": "district",
+        "adcode": 31,
+        "lng": 106.461923,
+        "lat": 29.569292,
+        "childrenNum": 0,
+        "parent": 330000,
+        "value": 137.93164308587015
+    },
+    {
+        "name": "重庆大学航空航天学院",
+        "level": "district",
+        "adcode": 32,
+        "lng": 106.465124,
+        "lat": 29.565939,
+        "childrenNum": 0,
+        "parent": 330000,
+        "value": 3737.2513967718633
+    },
+    {
+        "name": "重庆大学国有资产管理办公室",
+        "level": "district",
+        "adcode": 33,
+        "lng": 106.468875,
+        "lat": 29.565474,
+        "childrenNum": 0,
+        "parent": 330000,
+        "value": 776.6608139038389
+    },
+    {
+        "name": "重庆机械电子技师学院B区",
+        "level": "district",
+        "adcode": 34,
+        "lng": 106.419087,
+        "lat": 29.527473,
+        "childrenNum": 0,
+        "parent": 330000,
+        "value": 4364.406037915075
+    },
+    {
+        "name": "重庆科技学院工商管理学院",
+        "level": "district",
+        "adcode": 35,
+        "lng": 106.324731,
+        "lat": 29.58835,
+        "childrenNum": 0,
+        "parent": 330000,
+        "value": 1583.615340371215
+    },
+    {
+        "name": "通信工程学院教务办",
+        "level": "district",
+        "adcode": 36,
+        "lng": 106.325232,
+        "lat": 29.624555,
+        "childrenNum": 0,
+        "parent": 330000,
+        "value": 618.6542329437772
+    },
+    {
+        "name": "重庆商务职业学院",
+        "level": "district",
+        "adcode": 37,
+        "lng": 106.30882,
+        "lat": 29.635697,
+        "childrenNum": 0,
+        "parent": 330000,
+        "value": 753.4095090080217
+    },
+    {
+        "name": "重庆大学思源社",
+        "level": "district",
+        "adcode": 38,
+        "lng": 106.299654,
+        "lat": 29.596025,
+        "childrenNum": 0,
+        "parent": 330000,
+        "value": 1368.8042740515127
+    },
+    {
+        "name": "华龙网新媒体实践基地",
+        "level": "district",
+        "adcode": 39,
+        "lng": 106.296286,
+        "lat": 29.595217,
+        "childrenNum": 0,
+        "parent": 330000,
+        "value": 4703.15191963157
+    },
+    {
+        "name": "重庆大学-统计学",
+        "level": "district",
+        "adcode": 40,
+        "lng": 106.29695,
+        "lat": 29.59565,
+        "childrenNum": 0,
+        "parent": 330000,
+        "value": 1143.25138813568
+    },
+    {
+        "name": "重庆大学国家助学贷款管理中心",
+        "level": "district",
+        "adcode": 41,
+        "lng": 106.468139,
+        "lat": 29.563441,
+        "childrenNum": 0,
+        "parent": 330000,
+        "value": 3113.64193722233
+    },
+    {
+        "name": "重庆第二师范学院光华教学部",
+        "level": "district",
+        "adcode": 42,
+        "lng": 106.420825,
+        "lat": 29.522735,
+        "childrenNum": 0,
+        "parent": 330000,
+        "value": 2964.0347932724962
+    },
+    {
+        "name": "重庆大学毕业生就业指导办公室",
+        "level": "district",
+        "adcode": 43,
+        "lng": 106.468139,
+        "lat": 29.563441,
+        "childrenNum": 0,
+        "parent": 330000,
+        "value": 3803.0903276994068
+    },
+    {
+        "name": "重庆师范大学团校",
+        "level": "district",
+        "adcode": 44,
+        "lng": 106.299454,
+        "lat": 29.613656,
+        "childrenNum": 0,
+        "parent": 330000,
+        "value": 1931.7032200614315
+    },
+    {
+        "name": "重庆大学虎溪校区数学与统计学院",
+        "level": "district",
+        "adcode": 45,
+        "lng": 106.297011,
+        "lat": 29.590245,
+        "childrenNum": 0,
+        "parent": 330000,
+        "value": 3184.935458131256
+    },
+    {
+        "name": "重庆大学建筑城规学院",
+        "level": "district",
+        "adcode": 46,
+        "lng": 106.461644,
+        "lat": 29.568143,
+        "childrenNum": 0,
+        "parent": 330000,
+        "value": 4066.9668135184124
+    },
+    {
+        "name": "重庆大学信息化办公室",
+        "level": "district",
+        "adcode": 47,
+        "lng": 106.465741,
+        "lat": 29.567751,
+        "childrenNum": 0,
+        "parent": 330000,
+        "value": 1437.2785266966282
+    },
+    {
+        "name": "外国语言文学研究编辑部",
+        "level": "district",
+        "adcode": 48,
+        "lng": 106.298176,
+        "lat": 29.595955,
+        "childrenNum": 0,
+        "parent": 330000,
+        "value": 400.18651126166316
+    },
+    {
+        "name": "重庆大学虎溪校区财务室",
+        "level": "district",
+        "adcode": 49,
+        "lng": 106.300138,
+        "lat": 29.595658,
+        "childrenNum": 0,
+        "parent": 330000,
+        "value": 1778.541223361485
+    },
+    {
+        "name": "重庆大学学院教务办公室",
+        "level": "district",
+        "adcode": 50,
+        "lng": 106.299481,
+        "lat": 29.596076,
+        "childrenNum": 0,
+        "parent": 330000,
+        "value": 145.28350906872433
+    },
+    {
+        "name": "重庆邮电大学重庆通信学院办学点",
+        "level": "district",
+        "adcode": 51,
+        "lng": 106.422409,
+        "lat": 29.533992,
+        "childrenNum": 0,
+        "parent": 330000,
+        "value": 2622.4922254400362
+    },
+    {
+        "name": "重庆科技学院(东门)",
+        "level": "district",
+        "adcode": 52,
+        "lng": 106.329426,
+        "lat": 29.594288,
+        "childrenNum": 0,
+        "parent": 330000,
+        "value": 1533.4938832373978
+    },
+    {
+        "name": "重庆师范大学",
+        "level": "district",
+        "adcode": 53,
+        "lng": 106.307233,
+        "lat": 29.6126,
+        "childrenNum": 0,
+        "parent": 330000,
+        "value": 4430.756666961174
+    },
+    {
+        "name": "重庆大学药学院",
+        "level": "district",
+        "adcode": 54,
+        "lng": 106.300263,
+        "lat": 29.591596,
+        "childrenNum": 0,
+        "parent": 330000,
+        "value": 3314.4623178860334
+    },
+    {
+        "name": "新闻学院电视演播厅",
+        "level": "district",
+        "adcode": 55,
+        "lng": 106.296283,
+        "lat": 29.595248,
+        "childrenNum": 0,
+        "parent": 330000,
+        "value": 1496.6470184435032
+    },
+    {
+        "name": "重庆警察学院",
+        "level": "district",
+        "adcode": 56,
+        "lng": 106.319642,
+        "lat": 29.625682,
+        "childrenNum": 0,
+        "parent": 330000,
+        "value": 4179.391974902094
+    },
+    {
+        "name": "四川外国语大学-重庆法语联盟",
+        "level": "district",
+        "adcode": 57,
+        "lng": 106.438193,
+        "lat": 29.571672,
+        "childrenNum": 0,
+        "parent": 330000,
+        "value": 4064.0570439506396
+    },
+    {
+        "name": "重庆警察学院大学城校区",
+        "level": "district",
+        "adcode": 58,
+        "lng": 106.319562,
+        "lat": 29.62566,
+        "childrenNum": 0,
+        "parent": 330000,
+        "value": 3533.7303230064276
+    },
+    {
+        "name": "重庆师范大学研究生委员会",
+        "level": "district",
+        "adcode": 59,
+        "lng": 106.306071,
+        "lat": 29.615289,
+        "childrenNum": 0,
+        "parent": 330000,
+        "value": 4927.0865897174535
+    },
+    {
+        "name": "重庆师范大学研究生工作室",
+        "level": "district",
+        "adcode": 60,
+        "lng": 106.303314,
+        "lat": 29.610523,
+        "childrenNum": 0,
+        "parent": 330000,
+        "value": 1741.5798118062787
+    },
+    {
+        "name": "重庆大学现代生命科学实验教学中心",
+        "level": "district",
+        "adcode": 61,
+        "lng": 106.471562,
+        "lat": 29.56514,
+        "childrenNum": 0,
+        "parent": 330000,
+        "value": 2808.601955510208
+    },
+    {
+        "name": "电气工程学院继续教育办公室",
+        "level": "district",
+        "adcode": 62,
+        "lng": 106.466273,
+        "lat": 29.565047,
+        "childrenNum": 0,
+        "parent": 330000,
+        "value": 4764.364447990111
+    },
+    {
+        "name": "重庆大学学生就业服务中心",
+        "level": "district",
+        "adcode": 63,
+        "lng": 106.470542,
+        "lat": 29.566133,
+        "childrenNum": 0,
+        "parent": 330000,
+        "value": 3975.392411611528
+    },
+    {
+        "name": "重庆大学土木工程学院",
+        "level": "district",
+        "adcode": 64,
+        "lng": 106.461066,
+        "lat": 29.567561,
+        "childrenNum": 0,
+        "parent": 330000,
+        "value": 3288.625378806739
+    },
+    {
+        "name": "重庆师范大学化学学院",
+        "level": "district",
+        "adcode": 65,
+        "lng": 106.303203,
+        "lat": 29.611396,
+        "childrenNum": 0,
+        "parent": 330000,
+        "value": 1245.542295047859
+    },
+    {
+        "name": "重庆大学分析测试中心",
+        "level": "district",
+        "adcode": 66,
+        "lng": 106.296588,
+        "lat": 29.590883,
+        "childrenNum": 0,
+        "parent": 330000,
+        "value": 3099.216839868718
+    },
+    {
+        "name": "周师傅二手书(四川外语大学)",
+        "level": "district",
+        "adcode": 67,
+        "lng": 106.433949,
+        "lat": 29.565579,
+        "childrenNum": 0,
+        "parent": 330000,
+        "value": 58.09643206446169
+    },
+    {
+        "name": "重庆科技学院",
+        "level": "district",
+        "adcode": 68,
+        "lng": 106.329577,
+        "lat": 29.593829,
+        "childrenNum": 0,
+        "parent": 330000,
+        "value": 2580.585536702361
+    },
+    {
+        "name": "重庆大学后勤管理处",
+        "level": "district",
+        "adcode": 69,
+        "lng": 106.467031,
+        "lat": 29.568843,
+        "childrenNum": 0,
+        "parent": 330000,
+        "value": 3234.229766083362
+    },
+    {
+        "name": "重庆大学",
+        "level": "district",
+        "adcode": 70,
+        "lng": 106.472604,
+        "lat": 29.563815,
+        "childrenNum": 0,
+        "parent": 330000,
+        "value": 1295.9303798370404
+    }
+]

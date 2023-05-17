@@ -1,0 +1,66 @@
+/*
+ * @Author: KoTen_Bu
+ * @Date: 2021-09-27 16:31:43
+ * @LastEditTime: 2022-03-24 16:52:51
+ * @LastEditors: yanghuiqi
+ * @Description: 
+ * @FilePath: \portal-v2\fe\src\statics\js\pre-test.d2193n19d4n21oi.js
+ */
+(function () {
+  /**
+   * 2020-04-04 清明节 黑白
+   */
+  // let DlsEventInstance = new DlsEvent()
+  function isToday(str) {
+    var d = new Date(str.replace(/-/g, "/"));
+    var todaysDate = new Date();
+    if (d.setHours(0, 0, 0, 0) == todaysDate.setHours(0, 0, 0, 0)) {
+      return true;
+    } else {
+      return false;
+    }
+  }
+
+  function loadJS(url, callback) {
+    console.log('wanmeisdk load start')
+    var script = document.createElement('script'),
+      fn = callback || function () { };
+    script.type = 'text/javascript';
+    //IE
+    if (script.readyState) {
+      script.onreadystatechange = function () {
+        if (script.readyState == 'loaded' || script.readyState == 'complete') {
+          script.onreadystatechange = null;
+          fn();
+        }
+      };
+    } else {
+      //其他浏览器
+      script.onload = function () {
+        fn();
+      };
+    }
+    script.src = url;
+    document.getElementsByTagName('head')[0].appendChild(script);
+  }
+
+  window.onload = function () {
+    if (isToday('2020-04-04')) {
+      document.querySelector('html').style.filter = 'grayscale(1)'
+    }
+    loadJS('https://festatic.allhistory.com/staticjs/event/event.1.0.js', function () {
+      console.log('wanmeisdk load finish')
+      DlsEvent.setOptions({
+        serviceUrl: `https:\/\/www.allhistory.com/api/m/log/tracking/h5/record`,
+      })
+
+      DlsEvent.sendTrackingV2({ actionType: 'pageShow' })
+      window.onpopstate = () => {
+        DlsEvent.sendTrackingV2({ actionType: 'pageShow' })
+      }
+      window.onhashchange = () => {
+        DlsEvent.sendTrackingV2({ actionType: 'pageShow' })
+      }
+    })
+  }
+})()

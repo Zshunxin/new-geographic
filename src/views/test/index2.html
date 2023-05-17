@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>知识图谱系统</title>
+    <style>
+        /* 样式设置 */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: transparent;
+            transition: background-color 0.3s;
+            z-index: 100;
+        }
+
+        header .show-on-scroll {
+            background-color: rgb(14, 66, 210);
+            color: #ffffff;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-left: 10px;
+        }
+
+        nav ul li a {
+            color: #ffffff;
+            text-decoration: none;
+            padding: 5px 10px;
+            transition: background-color 0.3s;
+        }
+
+        nav ul li a:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+
+        .main-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            height: 100vh;
+            background-color: rgb(14, 66, 210);
+            transition: background-color 0.3s;
+            color: #ffffff;
+        }
+
+        .main-container h2 {
+            font-size: 32px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .main-container img {
+            width: 200px;
+            height: 200px;
+            opacity: 0;
+            transition: opacity 0.5s;
+        }
+
+        .start-button {
+            background-color: transparent;
+            color: #ffffff;
+            border: 2px solid #ffffff;
+            padding: 8px 16px;
+            font-size: 16px;
+            text-decoration: none;
+            transition: background-color 0.3s, color 0.3s;
+            margin-top: 20px;
+        }
+
+        .start-button:hover {
+            background-color: #ffffff;
+            color: rgb(14, 66, 210);
+        }
+
+        .line {
+            width: 100%;
+            height: 2px;
+            background-color: rgb(14, 66, 210);
+            margin: 20px 0;
+        }
+
+        /* CSS动画 */
+        @keyframes slideIn {
+            from {
+                transform: translateY(-100%);
+            }
+
+            to {
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        /* JavaScript触发动画 */
+        document.addEventListener("DOMContentLoaded", function(event) {
+                var header=document.querySelector("header");
+                var mainContainer=document.querySelector(".main-container");
+                var startButton=document.querySelector(".start-button");
+                var img=document.querySelector(".main-container img");
+                var line=document.querySelector(".line");
+
+                var section2=document.getElementById("section2");
+                var headerHeight=header.offsetHeight;
+
+                window.addEventListener("scroll", function() {
+    </style>
+
+    <script>
+        // 头部按钮区域的悬浮
+        if (window.pageYOffset > headerHeight) {
+            header.classList.add("show-on-scroll");
+        }
+
+        else {
+            header.classList.remove("show-on-scroll");
+        }
+
+        // 页面滚动动效
+        if (window.pageYOffset >= section2.offsetTop) {
+            mainContainer.style.backgroundColor = "另一个颜色"; // 替换为另一个颜色的值
+            line.style.backgroundColor = "另一个颜色"; // 替换为另一个颜色的值
+        }
+
+        else {
+            mainContainer.style.backgroundColor = "rgb(14, 66, 210)";
+            line.style.backgroundColor = "rgb(14, 66, 210)";
+        }
+    });
+
+        header.style.animation = "slideIn 0.5s forwards";
+        mainContainer.style.animation = "slideIn 0.5s forwards";
+
+        img.onload = function () {
+            img.style.animation = "fadeIn 1s forwards";
+        }
+
+            ;
+        img.src = "your_image_url.jpg"; // 替换为实际图片的URL
+    });
+    </script>
+</head>
+
+<body>
+    <header class="show-on-scroll">
+        <h1>知识图谱系统</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Demo</a></li>
+                <li><a href="#">Download</a></li>
+                <li><a href="#">Document</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="main-container">
+        <div class="slogan">
+            <h2>Deep Learning based Knowledge Extraction Toolkit</h2>
+        </div>
+        <div class="start-button-container"><a class="start-button" href="#section2">Get Started</a></div>
+    </div>
+    <div id="section2" class="section">
+        <div class="content">
+            < !-- 第二页的内容 -->
+        </div>
+    </div>
+    <div class="line"></div>
+</body>
+
+</html>

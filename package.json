@@ -1,0 +1,24 @@
+{
+  "name": "new-geographic",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@antv/g6": "^4.8.8",
+    "axios": "^1.3.5",
+    "echarts": "^5.4.2",
+    "echarts-wordcloud": "^2.1.0",
+    "pinia": "^2.0.32",
+    "vue": "^3.2.47",
+    "vue-router": "^4.1.6"
+  },
+  "devDependencies": {
+    "@arco-design/web-vue": "^2.44.7",
+    "@vitejs/plugin-vue": "^4.0.0",
+    "vite": "^4.1.4"
+  }
+}

@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>知识图谱API说明</title>
+    <style>
+        body {
+            background-color: #f5f5f5;
+            font-family: Arial, sans-serif;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: row;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .sidebar {
+            width: 250px;
+            background-color: rgb(14, 66, 210);
+            color: #fff;
+            padding: 20px;
+            box-sizing: border-box;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            margin-top: 20px;
+            margin-bottom: 40px;
+        }
+
+        .nav {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            flex-grow: 1;
+        }
+
+        .nav a {
+            color: #fff;
+            text-decoration: none;
+            margin-bottom: 20px;
+            font-size: 18px;
+            text-align: center;
+            width: 100%;
+            box-sizing: border-box;
+            padding: 10px;
+            border-radius: 5px;
+            transition: background-color 0.2s ease-in-out;
+        }
+
+        .nav a:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+
+        .search {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            margin-bottom: 20px;
+            width: 100%;
+            box-sizing: border-box;
+            padding: 10px;
+            border-radius: 5px;
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+
+        .search input[type="text"] {
+            flex-grow: 1;
+            background-color: transparent;
+            border: none;
+            color: #fff;
+            font-size: 16px;
+            padding: 0;
+            margin: 0;
+            outline: none;
+        }
+
+        .search button {
+            background-color: transparent;
+            border: none;
+            color: #fff;
+            font-size: 16px;
+            cursor: pointer;
+            margin-left: 10px;
+            outline: none;
+        }
+
+        .content {
+            flex-grow: 1;
+            padding: 20px;
+            box-sizing: border-box;
+            height: 100%;
+            overflow-y: auto;
+        }
+
+        h1 {
+            color: rgb(14, 66, 210);
+            margin-top: 0;
+            margin-bottom: 20px;
+        }
+
+        p {
+            line-height: 1.5;
+            margin-bottom: 20px;
+        }
+
+        code {
+            background-color: #f5f5f5;
+            padding: 2px 5px;
+            border-radius: 3px;
+            font-family: Consolas, monospace;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <div class="logo">知识图谱API</div>
+            <div class="search">
+                <input type="text" placeholder="请输入关键词">
+                <button>搜索</button>
+            </div>
+            <div class="nav">
+                <a href="#">实体查询</a>
+                <a href="#">关系查询</a>
+                <a href="#">属性查询</a>
+            </div>
+
+        </div>
+        <div class="content">
+            <h1>知识图谱API说明</h1>
+            <p>知识图谱API是一组用于访问知识图谱数据的接口，可以实现对知识图谱中的实体、关系、属性等进行查询和操作。</p>
+            <h2>使用方法</h2>
+            <p>使用知识图谱API需要先获取API密钥，然后通过HTTP请求访问API接口。API接口返回的数据格式为JSON。</p>
+            <p>以下是一个查询实体信息的示例：</p>
+            <code>GET /api/entity?name=张三&apikey=yourapikey</code>
+            <p>其中，<code>name</code>参数表示要查询的实体名称，<code>apikey</code>参数表示API密钥。</p>
+            <h2>API接口列表</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>接口名称</th>
+                        <th>请求方式</th>
+                        <th>参数</th>
+                        <th>返回值</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>/api/entity</td>
+                        <td>GET</td>
+                        <td>name, apikey</td>
+                        <td>实体信息</td>
+                    </tr>
+                    <tr>
+                        <td>/api/relation</td>
+                        <td>GET</td>
+                        <td>subject, predicate, object, apikey</td>
+                        <td>关系信息</td>
+                    </tr>
+                    <tr>
+                        <td>/api/property</td>
+                        <td>GET</td>
+                        <td>entity, property, apikey</td>
+                        <td>属性信息</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <style>
+        body {
+            background-color: #f5f5f5;
+            font-family: Arial, sans-serif;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: row;
+            height: 100vh;
+
+            overflow: hidden;
+        }
+
+        .sidebar {
+            width: 230px;
+            background-color: rgba(255, 255, 255, 0.711);
+            color: #fff;
+            /* padding: 20px; */
+            box-sizing: border-box;
+            height: 800px;
+            display: flex;
+            flex-direction: column;
+            /* align-items: center; */
+            /* justify-content: space-between; */
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            margin-top: 20px;
+            margin-bottom: 40px;
+        }
+
+        .nav {
+            display: flex;
+            flex-direction: column;
+            /* align-items: center; */
+            /* justify-content: center; */
+            flex-grow: 1;
+        }
+
+        .nav a {
+            color: #242424;
+            text-decoration: none;
+            margin-bottom: 20px;
+            font-size: 18px;
+            text-align: center;
+            width: 100%;
+            box-sizing: border-box;
+            padding: 10px;
+            border-radius: 5px;
+            transition: background-color 0.2s ease-in-out;
+        }
+
+        .nav a:hover {
+            color: rgb(14, 66, 210);
+            /* background-color: rgba(182, 182, 182, 0.711); */
+        }
+
+        .search {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            margin-bottom: 20px;
+            width: 180px;
+            box-sizing: border-box;
+            padding: 0px 10px;
+            border-radius: 5px;
+            background-color: rgba(181, 181, 181, 0.711);
+        }
+
+        .search input[type="text"] {
+            flex-grow: 1;
+            background-color: transparent;
+            border: none;
+            color: #fff;
+            font-size: 16px;
+            padding: 0;
+            margin: 0;
+            outline: none;
+        }
+
+        .search button {
+            background-color: transparent;
+            border: none;
+            color: #fff;
+            font-size: 16px;
+            cursor: pointer;
+            margin-left: 10px;
+            outline: none;
+        }
+
+        .content {
+            flex-grow: 1;
+            padding: 20px;
+            box-sizing: border-box;
+            height: 100%;
+            overflow-y: auto;
+        }
+
+        h1 {
+            color: rgb(14, 66, 210);
+            margin-top: 0;
+            margin-bottom: 20px;
+        }
+
+        p {
+            line-height: 1.5;
+            margin-bottom: 20px;
+        }
+
+        code {
+            background-color: #f5f5f5;
+            padding: 2px 5px;
+            border-radius: 3px;
+            font-family: Consolas, monospace;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        th,
+        td {
+            padding: 10px;
+            border: 1px solid #ccc;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f5f5f5;
+        }
+    </style>
+</body>
+
+</html>

@@ -1,0 +1,354 @@
+<!DOCTYPEhtml>
+    <html>
+
+    <head>
+        <metacharset="UTF-8">
+            <title>知识图谱API说明</title>
+            <style>
+
+            </style>
+    </head>
+
+    <body>
+        <divstyle="display:flex; flex-direction:row;">
+            <divclass="sidebar">
+                <divclass="logo">知识图谱API</divclass=>
+                    <divclass="search">
+                        <inputtype="text"placeholder="请输入关键词">
+                            </div>
+                            <divclass="nav">
+                                <ahref="#">实体查询</ahref=>
+                                    <ahref="#">关系查询</ahref=>
+                                        <ahref="#">属性查询</ahref=>
+                                            </div>
+
+                                            </div>
+                                            <divclass="container">
+                                                <h2>概述</h2>
+                                                <p>知识图谱API是一组用于访问知识图谱数据的接口，可以实现对知识图谱中的实体、关系、属性等进行查询和操作。</p>
+                                                <h2>使用方法</h2>
+                                                <p>使用知识图谱API需要先获取API密钥，然后通过HTTP请求访问API接口。API接口返回的数据格式为JSON。</p>
+                                                <p>以下是一个查询实体信息的示例：</p>
+                                                <code>GET/api/entity?name=张三&apikey=yourapikey</code>
+                                                <p>其中，<code>name</code>参数表示要查询的实体名称，<code>apikey</code>参数表示API密钥。</p>
+                                                <h2>API接口列表</h2>
+                                                <table>
+                                                    <thead>
+                                                        <tr>
+                                                            <th>接口名称</th>
+                                                            <th>请求方式</th>
+                                                            <th>参数</th>
+                                                            <th>返回值</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>/api/entity</td>
+                                                            <td>GET</td>
+                                                            <td>name,apikey</td>
+                                                            <td>实体信息</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>/api/relation</td>
+                                                            <td>GET</td>
+                                                            <td>subject,predicate,object,apikey</td>
+                                                            <td>关系信息</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>/api/property</td>
+                                                            <td>GET</td>
+                                                            <td>entity,property,apikey</td>
+                                                            <td>属性信息</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>/api/search</td>
+                                                            <td>GET</td>
+                                                            <td>keywords,apikey</td>
+                                                            <td>搜索结果</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>/api/similar</td>
+                                                            <td>GET</td>
+                                                            <td>entity,apikey</td>
+                                                            <td>相似实体</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>/api/path</td>
+                                                            <td>GET</td>
+                                                            <td>start,end,apikey</td>
+                                                            <td>路径信息</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>/api/ontology</td>
+                                                            <td>GET</td>
+                                                            <td>entity,apikey</td>
+                                                            <td>本体信息</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+
+                                                <table>
+                                                    <thead>
+                                                        <tr>
+                                                            <th>接口名称</th>
+                                                            <th>请求方式</th>
+                                                            <th>参数</th>
+                                                            <th>返回值</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>/api/user</td>
+                                                            <td>POST</td>
+                                                            <td>username,password</td>
+                                                            <td>用户信息</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>/api/login</td>
+                                                            <td>POST</td>
+                                                            <td>username,password</td>
+                                                            <td>登录状态</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>/api/logout</td>
+                                                            <td>POST</td>
+                                                            <td>apikey</td>
+                                                            <td>注销状态</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>/api/search</td>
+                                                            <td>GET</td>
+                                                            <td>keywords,apikey</td>
+                                                            <td>搜索结果</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+
+
+                                                </divclass=>
+                                                </div>
+
+                                                <style>
+                                                    body {
+                                                        background-color: #f5f5f5;
+                                                        font-family: Arial, sans-serif;
+                                                        color: #333;
+                                                    }
+
+                                                    h1 {
+                                                        color: rgb(14, 66, 210);
+                                                        text-align: center;
+                                                        margin-top: 50px;
+                                                    }
+
+                                                    .container {
+                                                        max-width: 800px;
+                                                        margin: 0auto;
+                                                        padding: 20px;
+                                                        background-color: #fff;
+                                                        box-shadow: 0010pxrgba(0, 0, 0, 0.1);
+                                                        border-radius: 5px;
+                                                    }
+
+                                                    h2 {
+                                                        color: rgb(14, 66, 210);
+                                                        margin-top: 30px;
+                                                        margin-bottom: 20px;
+                                                    }
+
+                                                    p {
+                                                        line-height: 1.5;
+                                                        margin-bottom: 20px;
+                                                    }
+
+                                                    code {
+                                                        background-color: #f5f5f5;
+                                                        padding: 2px5px;
+                                                        border-radius: 3px;
+                                                        font-family: Consolas, monospace;
+                                                    }
+
+                                                    body {
+                                                        background-color: #f5f5f5;
+                                                        font-family: Arial, sans-serif;
+                                                        color: #333;
+                                                    }
+
+                                                    h1 {
+                                                        color: rgb(14, 66, 210);
+                                                        text-align: center;
+                                                        margin-top: 50px;
+                                                    }
+
+                                                    .container {
+                                                        max-width: 800px;
+                                                        margin: 0auto;
+                                                        padding: 20px;
+                                                        background-color: #fff;
+                                                        box-shadow: 0010pxrgba(0, 0, 0, 0.1);
+                                                        border-radius: 5px;
+                                                    }
+
+                                                    h2 {
+                                                        color: rgb(14, 66, 210);
+                                                        margin-top: 30px;
+                                                        margin-bottom: 20px;
+                                                    }
+
+                                                    p {
+                                                        line-height: 1.5;
+                                                        margin-bottom: 20px;
+                                                    }
+
+                                                    code {
+                                                        background-color: #f5f5f5;
+                                                        padding: 2px5px;
+                                                        border-radius: 3px;
+                                                        font-family: Consolas, monospace;
+                                                    }
+
+                                                    h1 {
+                                                        color: rgb(14, 66, 210);
+                                                        text-align: center;
+                                                        margin-top: 50px;
+                                                    }
+
+
+
+                                                    .sidebar {
+                                                        text-align: center;
+                                                        position: fixed;
+                                                        z-index: 90;
+                                                        left: 50px;
+                                                        width: 210px;
+                                                        background-color: rgba(255, 255, 255, 0.711);
+                                                        color: #fff;
+                                                        /*padding:20px;*/
+                                                        background-color: #ffffff;
+                                                        box-shadow: 0010pxrgba(0, 0, 0, 0.1);
+                                                        border-radius: 5px;
+                                                        box-sizing: border-box;
+                                                        height: 800px;
+                                                        flex-direction: column;
+                                                        justify-content: space-between;
+                                                    }
+
+                                                    .container {
+                                                        max-width: 1200px;
+                                                        /*margin:0auto;*/
+                                                        position: relative;
+                                                        justify-content: center;
+                                                        align-items: center;
+                                                        /*padding:10px100px;*/
+                                                        background-color: #fff;
+                                                        box-shadow: 0010pxrgba(0, 0, 0, 0.1);
+                                                        border-radius: 5px;
+                                                    }
+
+                                                    .logo {
+                                                        font-size: 24px;
+                                                        font-weight: bold;
+                                                        margin-top: 20px;
+                                                        margin-bottom: 40px;
+                                                        color: rgb(14, 66, 210);
+                                                        text-align: center;
+                                                    }
+
+                                                    .nav {
+                                                        display: flex;
+                                                        flex-direction: column;
+
+                                                        /*align-items:center;*/
+                                                        /*justify-content:center;*/
+                                                        flex-grow: 1;
+                                                    }
+
+                                                    .nava {
+                                                        color: #242424;
+                                                        text-decoration: none;
+                                                        margin-bottom: 20px;
+                                                        margin-left: 10px;
+                                                        font-size: 18px;
+                                                        text-align: center;
+                                                        width: 180px;
+                                                        box-sizing: border-box;
+                                                        padding: 10px;
+                                                        border-radius: 5px;
+                                                        transition: background-color0.2sease-in-out;
+                                                    }
+
+                                                    .nava:hover {
+                                                        color: rgb(14, 66, 210);
+                                                        background-color: rgba(237, 237, 237, 0.711);
+                                                    }
+
+                                                    .search {
+                                                        display: flex;
+                                                        flex-direction: row;
+                                                        align-items: center;
+                                                        margin-left: 10px;
+                                                        margin-bottom: 20px;
+                                                        width: 180px;
+                                                        box-sizing: border-box;
+                                                        padding: 10px20px;
+                                                        border-radius: 5px;
+                                                        text-align: center;
+                                                        border: rgb(14, 66, 210)1pxsolid;
+                                                        background-color: rgba(246, 246, 246, 0.711);
+                                                    }
+
+                                                    .search:hover {
+                                                        border: rgb(14, 66, 210);
+                                                    }
+
+                                                    .searchinput[type="text"] {
+                                                        flex-grow: 1;
+                                                        background-color: transparent;
+                                                        border: none;
+                                                        color: #fff;
+                                                        font-size: 16px;
+                                                        padding: 0;
+                                                        margin: 0;
+                                                        outline: none;
+                                                    }
+
+
+                                                    h2 {
+                                                        color: rgb(14, 66, 210);
+                                                        margin-top: 30px;
+                                                        margin-bottom: 20px;
+                                                    }
+
+                                                    p {
+                                                        line-height: 1.5;
+                                                        margin-bottom: 20px;
+                                                    }
+
+                                                    code {
+                                                        background-color: #f5f5f5;
+                                                        padding: 2px5px;
+                                                        border-radius: 3px;
+                                                        font-family: Consolas, monospace;
+                                                    }
+
+                                                    table {
+                                                        width: 100%;
+                                                        border-collapse: collapse;
+                                                        margin-top: 20px;
+                                                        margin-bottom: 20px;
+                                                    }
+
+                                                    th,
+                                                    td {
+                                                        padding: 10px;
+                                                        border: 1pxsolid#ccc;
+                                                        text-align: left;
+                                                    }
+
+                                                    th {
+                                                        background-color: #f5f5f5;
+                                                    }
+                                                </style>
+    </body>
+
+    </html>

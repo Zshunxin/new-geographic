@@ -1,0 +1,80 @@
+{
+    "name": "重庆大学",
+    "data": [
+        {
+            "name": "关系",
+            "data": [
+                {
+                    "tag": "关系",
+                    "data": "喜羊羊",
+                    "img": "/back-1.jpeg"
+                },
+                {
+                    "tag": "关系",
+                    "data": "灰太狼",
+                    "img": "/back-2.jpeg"
+                },
+                {
+                    "tag": "关系",
+                    "data": "沸羊羊",
+                    "img": "/back-3.jpeg"
+                },
+            ]
+        },
+        {
+            "name": "状态",
+            "data": [
+                {
+                    "tag": "状态",
+                    "data": "懒羊羊",
+                    "img": "/back-5.jpeg"
+                }
+            ]
+        },
+        {
+            "name": "属性",
+            "data": [
+                {
+                    "tag": "属性",
+                    "data": "懒羊羊的力量",
+                    "img": "/back-6.jpeg"
+                }
+            ]
+        },
+        {
+            "name": "变化",
+            "data": [
+                {
+                    "tag": "变化",
+                    "data": "创造青青草原",
+                    "img": "/back-4.jpeg"
+                },
+            ]
+        },
+        {
+            "name": "空间",
+            "data": [
+                {
+                    "tag": "空间",
+                    "data": "青青草原",
+                    "img": "/back-4.jpeg"
+                },
+            ]
+        },
+        {
+            "name": "时间",
+            "data": [
+                {
+                    "tag": "时间",
+                    "data": "公元2000年",
+                    "img": "/back-4.jpeg"
+                },
+                {
+                    "tag": "时间",
+                    "data": "公元2023年",
+                    "img": "/back-4.jpeg"
+                },
+            ]
+        }
+    ]
+}
