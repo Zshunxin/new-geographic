@@ -13,8 +13,8 @@ const goView = (page) => {
     <header>
         <nav>
             <div class="logo">
-                <img src="KGRAPH .png" alt="知识图谱系统">
-                <!-- <span>KNOWlEDGE GRAPH</span> -->
+                <img src="../assets/KGRAPH .png" alt="知识图谱系统">
+            <!-- <span>KNOWlEDGE GRAPH</span> -->
             </div>
             <ul>
                 <li><button @click="goView('start')" href="#">Home</button></li>
@@ -25,7 +25,7 @@ const goView = (page) => {
 
                 <!-- <input type="checkbox" id="dark-mode-toggle"> -->
                 <!-- <label style="align-content: center;text-align: center;padding: 18px;"
-                    for="dark-mode-toggle">切换暗夜模式</label> -->
+                                    for="dark-mode-toggle">切换暗夜模式</label> -->
             </ul>
         </nav>
     </header>
