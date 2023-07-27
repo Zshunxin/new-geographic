@@ -373,7 +373,7 @@ const showDataList = () => {
                 </div>
             </div>
             <div v-if="showData1">
-                <div v-for="item in data1List" style="display: flex;line-height: 33px;margin: 5px;align-items: center;">
+                <div class="item-data" v-for="item in data1List" style="">
                     <img :src="item.icon" alt="" srcset="" style="margin:0px 10px;height: 20px;">
                     <span style="font-size: 13px;">{{ item.text }}</span>
                 </div>
@@ -384,7 +384,8 @@ const showDataList = () => {
                 </div>
             </div>
             <div v-if="showData1">
-                <div v-for="item in data2List" style="display: flex;line-height: 33px;margin: 5px;align-items: center;">
+                <div class="item-data" v-for="item in data2List"
+                    style="display: flex;line-height: 33px;margin: 5px;align-items: center;">
                     <img :src="item.icon" alt="" srcset="" style="margin:0px 10px;height: 20px;">
                     <span style="font-size: 13px;">{{ item.text }}</span>
                 </div>
@@ -422,5 +423,17 @@ const showDataList = () => {
 /* // 隐藏右下角的“百度地图”logo */
 :deep(.anchorBL) {
     display: none;
+}
+
+.item-data {
+    display: flex;
+    line-height: 33px;
+    margin: 5px;
+    align-items: center;
+}
+
+.item-data:hover {
+    cursor: pointer;
+    background-color: rgba(249, 249, 249);
 }
 </style>
