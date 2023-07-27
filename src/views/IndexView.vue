@@ -1,5 +1,14 @@
 <script setup>
-
+// import data1 from './data/高校.js'
+// import data01 from '/data/高校.json'
+// import data2 from './data/工厂.json'
+// import data3 from './data/地铁站.json'
+// import data4 from './data/火车站.json'
+// import data5 from './data/加油站.json'
+// import data6 from './data/停车场.json'
+// import data7 from './data/银行.json'
+// import data8 from './data/邮局.json'
+// import data9 from './data/小学.json'
 import { useRouter } from 'vue-router';
 const route = useRouter()
 
@@ -14,7 +23,7 @@ const goView = (page) => {
         <nav>
             <div class="logo">
                 <img src="../assets/KGRAPH.png" alt="知识图谱系统">
-            <!-- <span>KNOWlEDGE GRAPH</span> -->
+                <!-- <span>KNOWlEDGE GRAPH</span> -->
             </div>
             <ul>
                 <li><button @click="goView('start')" href="#">Home</button></li>
@@ -25,7 +34,7 @@ const goView = (page) => {
 
                 <!-- <input type="checkbox" id="dark-mode-toggle"> -->
                 <!-- <label style="align-content: center;text-align: center;padding: 18px;"
-                                        for="dark-mode-toggle">切换暗夜模式</label> -->
+                                            for="dark-mode-toggle">切换暗夜模式</label> -->
             </ul>
         </nav>
     </header>

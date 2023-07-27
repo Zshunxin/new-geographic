@@ -1,8 +1,6 @@
 <script setup>
 import { onMounted, ref, reactive, watch } from 'vue';
 import { useRouter } from 'vue-router';
-const route = useRouter()
-
 import data1 from './data/高校.json'
 import data2 from './data/工厂.json'
 import data3 from './data/地铁站.json'
@@ -14,6 +12,9 @@ import data8 from './data/邮局.json'
 import data9 from './data/小学.json'
 import Cycle from './component/Cycle.vue'
 import CardData from './component/CardData.vue'
+const route = useRouter()
+
+
 onMounted(() => {
     initMap([DataList[0]]);
 })
@@ -251,12 +252,68 @@ function groupGet(val) {
     console.log(new_group);
     initMap(new_group)
 }
+
+const data1List = [
+    {
+        icon: "https://static.allhistory.com/online/view/Map/img/person-litterateur.e77a.svg",
+        text: "文学家"
+    },
+    {
+        icon: "https://static.allhistory.com/online/view/Map/img/person-social.87e9.svg",
+        text: "社会人物"
+    },
+    {
+        icon: "https://static.allhistory.com/online/view/Map/img/person-industry.cdb0.svg",
+        text: "行业人物"
+    }, {
+        icon: "https://static.allhistory.com/online/view/Map/img/person-artist.3951.svg",
+        text: "艺术家"
+    }, {
+        icon: "https://static.allhistory.com/online/view/Map/img/person-naturalist.ab0f.svg",
+        text: "自然科学家"
+    }, {
+        icon: "https://static.allhistory.com/online/view/Map/img/person-religious.2eda.svg",
+        text: "宗教人物"
+    }, {
+        icon: "https://static.allhistory.com/online/view/Map/img/person-sociologist.5e06.svg",
+        text: "人文社会学家"
+    }, {
+        icon: "https://static.allhistory.com/online/view/Map/img/person-military.db79.svg",
+        text: "军事人物"
+    }, {
+        icon: "https://static.allhistory.com/online/view/Map/img/person-politician.c5fb.svg",
+        text: "政治人物"
+    }
+
+]
+
+const data2List = [
+    {
+        icon: "https://static.allhistory.com/online/view/Map/img/events-military.51f3.svg",
+        text: "军事事件"
+    },
+    {
+        icon: "https://static.allhistory.com/online/view/Map/img/events-politician.b255.svg",
+        text: "政治事件"
+    },
+    {
+        icon: "https://static.allhistory.com/online/view/Map/img/events-social.ddf2.svg",
+        text: "社会事件"
+    },
+]
+
+const showData1 = ref(true)
+
+const showDataList = () => {
+    showData1.value = !showData1.value
+}
+
 </script>
 <template>
     <div id="map">
 
     </div>
-    <a-modal simple width="900px" height="600px" v-model:visible="modelData" @ok="handleOk" hide-cancel="true"
+    <a-modal v-if="false" simple width="900px" height="600px" v-model:visible="modelData" @ok="handleOk" hide-cancel="true"
         @cancel="handleCancel">
         <template #title>
             <div>
@@ -279,7 +336,7 @@ function groupGet(val) {
         </div>
     </a-modal>
 
-    <div style="position: absolute;top:20px;right: 20px;z-index: 9;">
+    <div v-if="false" style="position: absolute;top:20px;right: 20px;z-index: 9;">
         <div>
             <a-button style="margin-left:10px;background-color:white;" @click="goHomeView">HOME</a-button>
         </div>
@@ -292,6 +349,52 @@ function groupGet(val) {
                 placeholder="地物实体类型" multiple>
                 <a-option v-for="item in groupList">{{ item }}</a-option>
             </a-select>
+        </div>
+    </div>
+
+    <div
+        style="height: 50px;width: 350px; background-color: rgb(255, 255, 255);position: absolute;top: 10px;left:10px;box-shadow: 0 2px 4px 0 rgba(0,0,0,.08);display: flex;align-items: center;z-index: 100;">
+        <img src="https://static.allhistory.com/online/view/Map/img/logo.1598.svg"
+            style="height: 20px;line-height: 50px;margin: 10px;" alt="" srcset="">
+        <div>
+            <input type="text" style="all: unset;height:50px;width: 250px; border:none ;" placeholder="搜索地点、任务、事件">
+        </div>
+        <div>
+            <icon-search style="height: 50px;font-size: 25px;line-height: 50px;" />
+        </div>
+
+    </div>
+    <div style="display: flex;position: absolute;top: 70px;left:10px;gap: 10px;z-index: 100;">
+        <div
+            style="height: 100%;width: 150px; background-color: rgb(255, 255, 255);box-shadow: 0 2px 4px 0 rgba(0,0,0,.08)">
+            <div style="line-height: 36px;height: 36px;width: 100%; border-bottom: 1px solid #ececec;">
+                <div style="font-size: 16px;margin-left: 10px;font-size: rgb(9, 9, 9);">
+                    人物
+                </div>
+            </div>
+            <div v-if="showData1">
+                <div v-for="item in data1List" style="display: flex;line-height: 33px;margin: 5px;align-items: center;">
+                    <img :src="item.icon" alt="" srcset="" style="margin:0px 10px;height: 20px;">
+                    <span style="font-size: 13px;">{{ item.text }}</span>
+                </div>
+            </div>
+            <div style="line-height: 36px;height: 36px;width: 100%; border-bottom: 1px solid rgb(200, 200, 200);">
+                <div style="font-size: 16px;margin-left: 10px;font-size: rgb(9, 9, 9);">
+                    事件
+                </div>
+            </div>
+            <div v-if="showData1">
+                <div v-for="item in data2List" style="display: flex;line-height: 33px;margin: 5px;align-items: center;">
+                    <img :src="item.icon" alt="" srcset="" style="margin:0px 10px;height: 20px;">
+                    <span style="font-size: 13px;">{{ item.text }}</span>
+                </div>
+            </div>
+        </div>
+        <div @click="showDataList"
+            style="line-height: 36px;height: 36px;width: 36px;justify-content: center;;text-align: center; background-color: rgb(255, 255, 255);cursor: pointer;">
+
+            <icon-up v-if="showData1" />
+            <icon-down v-else />
         </div>
     </div>
 </template>
