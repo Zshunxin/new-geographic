@@ -354,8 +354,7 @@ const showDataList = () => {
 
     <div
         style="height: 50px;width: 350px; background-color: rgb(255, 255, 255);position: absolute;top: 10px;left:10px;box-shadow: 0 2px 4px 0 rgba(0,0,0,.08);display: flex;align-items: center;z-index: 100;">
-        <img src="https://static.allhistory.com/online/view/Map/img/logo.1598.svg"
-            style="height: 20px;line-height: 50px;margin: 10px;" alt="" srcset="">
+        <img src="../../assets/KLOGO.png" style="height: 20px;line-height: 50px;margin: 10px;" alt="" srcset="">
         <div>
             <input type="text" style="all: unset;height:50px;width: 250px; border:none ;" placeholder="搜索地点、任务、事件">
         </div>
