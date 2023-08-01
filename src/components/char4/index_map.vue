@@ -313,7 +313,7 @@ const showDataList = () => {
     <div id="map">
 
     </div>
-    <a-modal v-if="false" simple width="900px" height="600px" v-model:visible="modelData" @ok="handleOk" hide-cancel="true"
+    <a-modal simple width="900px" height="600px" v-model:visible="modelData" @ok="handleOk" hide-cancel="true"
         @cancel="handleCancel">
         <template #title>
             <div>
